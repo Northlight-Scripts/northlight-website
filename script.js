@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbySlXJp6C1cW20kWY_jqHFlLKvkP95368uwUPo1BQ1VNSvfAsgW_HVftOX2kL7pHv-U/exec";
+const GOOGLE_SCRIPT_URL = "DEINE_GOOGLE_SCRIPT_WEB_APP_URL_HIER_EINFÜGEN";
 
 const langBtn = document.getElementById("langBtn");
 let currentLang = localStorage.getItem("northlightLang") || "de";
@@ -20,13 +20,21 @@ if (langBtn) {
   langBtn.addEventListener("click", () => {
     setLanguage(currentLang === "de" ? "en" : "de");
   });
+
   setLanguage(currentLang);
 }
 
 function copyMail() {
   navigator.clipboard.writeText("contact@northlightanimation.com").then(() => {
     const status = document.getElementById("copyStatus");
-    if (status) status.textContent = "E-Mail wurde kopiert.";
+
+    if (status) {
+      status.textContent = "E-Mail wurde kopiert.";
+
+      setTimeout(() => {
+        status.textContent = "";
+      }, 2500);
+    }
   });
 }
 
@@ -56,6 +64,10 @@ if (newsletterForm) {
 
       newsletterStatus.textContent = "Danke! Du wurdest eingetragen.";
       newsletterForm.reset();
+
+      setTimeout(() => {
+        newsletterStatus.textContent = "";
+      }, 5000);
     } catch (error) {
       newsletterStatus.textContent = "Fehler. Bitte später erneut versuchen.";
     }
@@ -64,11 +76,14 @@ if (newsletterForm) {
 
 const cookieBanner = document.getElementById("cookieBanner");
 
-if (!localStorage.getItem("northlightCookies")) {
+if (cookieBanner && !localStorage.getItem("northlightCookies")) {
   cookieBanner.style.display = "flex";
 }
 
 function acceptCookies(type) {
   localStorage.setItem("northlightCookies", type);
-  cookieBanner.style.display = "none";
+
+  if (cookieBanner) {
+    cookieBanner.style.display = "none";
+  }
 }
