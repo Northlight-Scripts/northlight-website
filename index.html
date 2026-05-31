@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Northlight Animation Studios – Indie Animation Studio für cineastische Geschichten, Trailer und digitale Welten." />
+  <meta name="theme-color" content="#05070d" />
+  <title>Northlight Animation Studios</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Northlight Animation Studios Home">
+      <img src="assets/logo.png" alt="Northlight Animation Studios Logo" class="brand-logo" />
+      <span>Northlight</span>
+    </a>
+
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="#about" data-i18n="navAbout">Über uns</a>
+      <a href="#projects" data-i18n="navProjects">Projekte</a>
+      <a href="#join" data-i18n="navJoin">Mitmachen</a>
+      <a href="#newsletter" data-i18n="navNewsletter">Newsletter</a>
+      <a href="#contact" data-i18n="navContact">Kontakt</a>
+    </nav>
+
+    <button class="language-toggle" id="languageToggle" type="button" aria-label="Sprache wechseln">DE / EN</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow" data-i18n="heroEyebrow">Indie Animation Studio</p>
+        <h1>Northlight Animation Studios</h1>
+        <p class="hero-subtitle" data-i18n="heroSubtitle">Ein Indie-Animationsstudio für cineastische Geschichten, Trailer und digitale Welten.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects" data-i18n="heroBtnProjects">Projekt entdecken</a>
+          <a class="btn secondary" href="#join" data-i18n="heroBtnJoin">Mitmachen</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about reveal" id="about">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="aboutEyebrow">Über uns</p>
+        <h2 data-i18n="aboutTitle">Wir bauen atmosphärische Welten.</h2>
+      </div>
+      <p class="wide-text" data-i18n="aboutText">Northlight Animation Studios ist ein junges Indie-Studio mit Fokus auf cineastische Animation, Storytelling, Musik und digitale Welten. Unser Ziel ist es, Projekte zu erschaffen, die sich hochwertig, emotional und wiedererkennbar anfühlen.</p>
+    </section>
+
+    <section class="section projects reveal" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="projectsEyebrow">Aktuelles Projekt</p>
+        <h2 data-i18n="projectsTitle">Official Trailer Project</h2>
+      </div>
+      <div class="project-card">
+        <div class="project-visual">
+          <img src="assets/trailer-thumbnail.jpg" alt="Trailer Thumbnail Platzhalter" onerror="this.src='assets/hero-bg.jpg'" />
+        </div>
+        <div class="project-info">
+          <h3 data-i18n="projectCardTitle">Cinematic Minecraft Animation</h3>
+          <p data-i18n="projectCardText">Ein offizieller Trailer mit Studio-Intro, Voice Acting, Soundtrack, Behind-the-Scenes-Inhalten und einer starken visuellen Identität.</p>
+          <div class="tags">
+            <span>Animation</span>
+            <span>Voice Acting</span>
+            <span>Sound Design</span>
+            <span>BTS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services reveal">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="servicesEyebrow">Unsere Arbeit</p>
+        <h2 data-i18n="servicesTitle">Von Idee bis Atmosphäre.</h2>
+      </div>
+      <div class="grid">
+        <article class="glass-card"><h3>Animation</h3><p data-i18n="serviceAnimation">Cinematische Szenen, Charaktere und digitale Welten.</p></article>
+        <article class="glass-card"><h3>Storytelling</h3><p data-i18n="serviceStory">Geschichten mit Stimmung, Spannung und Wiedererkennung.</p></article>
+        <article class="glass-card"><h3>Sound Design</h3><p data-i18n="serviceSound">Musik, Effekte und Stimmen für einen starken Eindruck.</p></article>
+        <article class="glass-card"><h3>Community</h3><p data-i18n="serviceCommunity">Zusammenarbeit mit kreativen Menschen aus verschiedenen Bereichen.</p></article>
+      </div>
+    </section>
+
+    <section class="section join reveal" id="join">
+      <div class="split-card">
+        <div>
+          <p class="eyebrow" data-i18n="joinEyebrow">Join Northlight</p>
+          <h2 data-i18n="joinTitle">Du willst Teil zukünftiger Projekte werden?</h2>
+          <p data-i18n="joinText">Wir suchen immer wieder Sprecher, Animatoren, Cutter, Musiker und kreative Menschen, die Lust auf starke Indie-Projekte haben.</p>
+        </div>
+        <a class="btn primary" href="https://forms.gle/" target="_blank" rel="noopener" data-i18n="joinButton">Jetzt bewerben</a>
+      </div>
+    </section>
+
+    <section class="section newsletter reveal" id="newsletter">
+      <div class="newsletter-box">
+        <p class="eyebrow" data-i18n="newsletterEyebrow">Newsletter</p>
+        <h2 data-i18n="newsletterTitle">Updates direkt bekommen.</h2>
+        <p data-i18n="newsletterText">Erhalte Projekt-Updates, Release-Infos und Behind-the-Scenes-Neuigkeiten von Northlight.</p>
+        <form class="newsletter-form" action="https://forms.gle/" method="get" target="_blank">
+          <input type="email" name="email" placeholder="deine@email.com" aria-label="E-Mail-Adresse" required />
+          <button class="btn primary" type="submit" data-i18n="newsletterButton">Eintragen</button>
+        </form>
+        <small data-i18n="newsletterNote">Hinweis: Verbinde dieses Formular später mit Google Forms, Brevo, Mailchimp oder Cloudflare Workers.</small>
+      </div>
+    </section>
+
+    <section class="section contact reveal" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="contactEyebrow">Kontakt</p>
+        <h2 data-i18n="contactTitle">Business & Zusammenarbeit</h2>
+      </div>
+      <div class="contact-list">
+        <a href="mailto:contact@northlight-animation.com">contact@northlight-animation.com</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://linktr.ee/NorthlightAnimationStudio" target="_blank" rel="noopener">Linktree</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Northlight Animation Studios. <span data-i18n="footerText">Alle Rechte vorbehalten.</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
