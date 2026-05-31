@@ -78,7 +78,7 @@ img { max-width: 100%; display: block; }
   padding: 160px 20px 100px;
   overflow: hidden;
 }
-.hero-bg { position: absolute; inset: 0; background: url("hero-cinema.svg") center/cover no-repeat; transform: scale(1.04); }
+.hero-bg { position: absolute; inset: 0; background: url("hero-bg.jpg") center/cover no-repeat; transform: scale(1.04); }
 .hero-vignette {
   position: absolute;
   inset: 0;
