@@ -1,4 +1,4 @@
-const GOOGLE_SCRIPT_URL = "DEINE_GOOGLE_SCRIPT_WEB_APP_URL_HIER_EINFÜGEN";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbySlXJp6C1cW20kWY_jqHFlLKvkP95368uwUPo1BQ1VNSvfAsgW_HVftOX2kL7pHv-U/exec";
 
 const langBtn = document.getElementById("langBtn");
 let currentLang = localStorage.getItem("northlightLang") || "de";
