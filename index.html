@@ -1,206 +1,101 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Northlight Animation Studios</title>
-  <meta name="description" content="Northlight Animation Studios – Indie Animation Studio für cineastische Trailer, digitale Welten und Storytelling." />
-
-  <link rel="icon" href="favicon.png?v=30" type="image/png" />
-  <link rel="apple-touch-icon" href="favicon.png?v=30" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Northlight Animation Studios – Indie Animation Studio für cineastische Geschichten, Trailer und digitale Welten.">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
 <header class="header">
-  <a href="#home" class="brand">
-    <img src="logo.png?v=30" alt="Northlight Logo" />
+  <a class="brand" href="index.html">
+    <img src="assets/logo.png" alt="Northlight Logo">
     <span>Northlight</span>
   </a>
 
-  <nav class="desktop-nav">
-    <a href="#home">Home</a>
-    <a href="#projects">Projekte</a>
-    <a href="#partners">Partner</a>
-    <a href="#join">Bewerbung</a>
-    <a href="#newsletter">Newsletter</a>
-    <a href="#contact">Kontakt</a>
-  </nav>
+  <button class="menu-btn" id="menuBtn">☰</button>
 
-  <button id="langBtn" type="button">DE / EN</button>
+  <nav class="nav" id="nav">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projekte</a>
+    <a href="join.html">Bewerbung</a>
+    <a href="partners.html">Partner</a>
+    <a href="team.html">Team</a>
+    <a href="press.html">Presse</a>
+    <a href="contact.html">Kontakt</a>
+  </nav>
 </header>
 
 <main>
-  <section class="hero" id="home">
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-fallback.jpg">
+      <source src="assets/hero-video.mp4" type="video/mp4">
+    </video>
     <div class="hero-overlay"></div>
 
-    <div class="hero-content">
-      <p class="small">INDIE ANIMATION STUDIO</p>
-      <h1>Northlight<br />Animation Studios</h1>
-      <p
-        data-de="Cineastische Animationen, Trailer und digitale Welten."
-        data-en="Cinematic animations, trailers and digital worlds."
-      >
-        Cineastische Animationen, Trailer und digitale Welten.
-      </p>
-
-      <div class="hero-buttons">
-        <a href="#projects" class="btn">Projekte ansehen</a>
-        <a href="https://forms.gle/FpAwGiG7JvADMHBE8" target="_blank" class="btn outline">Jetzt bewerben</a>
+    <div class="hero-content reveal">
+      <p class="eyebrow">Independent Animation Studio</p>
+      <h1>Creating worlds.<br>Telling stories.</h1>
+      <p>Northlight Animation Studios erschafft cineastische Animationen, Trailer und digitale Welten.</p>
+      <div class="buttons">
+        <a class="btn" href="projects.html">Projekte entdecken</a>
+        <a class="btn ghost" href="join.html">Mitmachen</a>
       </div>
     </div>
   </section>
 
-  <section class="news-section">
-    <article class="news-card">
-      <span>NEWS</span>
-      <h2>Official Trailer Project</h2>
-      <p>Der erste große Trailer von Northlight Animation Studios befindet sich aktuell in Produktion.</p>
-      <a href="#projects">Mehr erfahren →</a>
-    </article>
-
-    <article class="news-card">
-      <span>JOIN</span>
-      <h2>Werde Teil des Teams</h2>
-      <p>Wir suchen kreative Menschen für Animation, Voice Acting, Musik, Schnitt und Storytelling.</p>
-      <a href="https://forms.gle/FpAwGiG7JvADMHBE8" target="_blank">Jetzt bewerben →</a>
-    </article>
-
-    <article class="news-card">
-      <span>COMMUNITY</span>
-      <h2>Follow our Journey</h2>
-      <p>Begleite Northlight auf Instagram, YouTube und Linktree.</p>
-      <a href="https://linktr.ee/NorthlightAnimationStudio" target="_blank">Alle Links →</a>
-    </article>
+  <section class="section reveal">
+    <p class="eyebrow center">Studio</p>
+    <h2 class="title center">Ein Indie-Studio mit filmischem Anspruch.</h2>
+    <p class="text center">
+      Northlight Animation Studios steht für Storytelling, Atmosphäre, Musik, Charaktere und visuelle Welten.
+      Unser Ziel ist es, Projekte zu erschaffen, die sich nicht nur ansehen, sondern erleben lassen.
+    </p>
   </section>
 
-  <section class="projects" id="projects">
-    <p class="small center">AKTUELLES PROJEKT</p>
-    <h2 class="section-title">Official Trailer</h2>
+  <section class="cards reveal">
+    <a class="card" href="projects.html">
+      <span>01</span>
+      <h3>Official Trailer Project</h3>
+      <p>Unser aktuelles Hauptprojekt mit Voice Acting, Soundtrack und cineastischer Minecraft-Animation.</p>
+    </a>
 
-    <div class="project-grid">
-      <img src="trailer-thumbnail.jpg?v=30" alt="Northlight Official Trailer" />
+    <a class="card" href="join.html">
+      <span>02</span>
+      <h3>Join Northlight</h3>
+      <p>Bewirb dich als Sprecher, Animator, Cutter, Musiker oder kreatives Teammitglied.</p>
+    </a>
 
-      <div>
-        <p class="small">IN PRODUKTION</p>
-        <h3>Cinematic Minecraft Animation</h3>
-        <p>
-          Ein offizieller Trailer mit Studio-Intro, Voice Acting, Soundtrack,
-          Behind-the-Scenes-Inhalten und einer starken filmischen Identität.
-        </p>
-
-        <div class="tags">
-          <span>Animation</span>
-          <span>Voice Acting</span>
-          <span>Sound Design</span>
-          <span>BTS</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="partners" id="partners">
-    <p class="small center">UNSERE</p>
-    <h2 class="section-title">Partner</h2>
-    <p class="center muted">Auf diese Partner und Unterstützer vertrauen wir.</p>
-
-    <div class="partner-row">
-      <a href="https://www.klaunwerkstatt.at/" target="_blank" class="partner-logo">
-        <img src="partner-klaunwerkstatt.png?v=30" alt="KLAUNwerkstatt Logo" />
-        <span>KLAUNwerkstatt</span>
-      </a>
-    </div>
-  </section>
-
-  <section class="join" id="join">
-    <div>
-      <p class="small">JOIN NORTHLIGHT</p>
-      <h2>Du willst Teil zukünftiger Projekte werden?</h2>
-      <p>
-        Wir suchen Sprecher, Animatoren, Cutter, Musiker und kreative Menschen,
-        die Lust auf starke Indie-Projekte haben.
-      </p>
-    </div>
-
-    <a href="https://forms.gle/FpAwGiG7JvADMHBE8" target="_blank" class="btn">Jetzt bewerben</a>
-  </section>
-
-  <section class="newsletter" id="newsletter">
-    <p class="small center">NEWSLETTER</p>
-    <h2 class="section-title">Updates direkt bekommen.</h2>
-    <p class="center muted">Trage dich ein und erhalte Projekt-Updates von Northlight.</p>
-
-    <form id="newsletterForm">
-      <input type="email" id="emailInput" placeholder="deine@email.com" required />
-      <button type="submit" class="btn">Eintragen</button>
-    </form>
-
-    <p id="newsletterStatus"></p>
-  </section>
-
-  <section class="contact" id="contact">
-    <p class="small center">KONTAKT</p>
-    <h2 class="section-title">Business & Zusammenarbeit</h2>
-
-    <div class="contact-grid">
-      <button onclick="copyMail()" class="contact-card" type="button">
-        <span>MAIL</span>
-        <strong>contact@northlightanimation.com</strong>
-        <small>Klicken zum Kopieren</small>
-      </button>
-
-      <a href="https://www.instagram.com/northlightanimationstudio/" target="_blank" class="contact-card">
-        <span>SOCIAL</span>
-        <strong>Instagram</strong>
-      </a>
-
-      <a href="https://www.youtube.com/@NorthlightAnimationStudio" target="_blank" class="contact-card">
-        <span>VIDEO</span>
-        <strong>YouTube</strong>
-      </a>
-
-      <a href="https://linktr.ee/NorthlightAnimationStudio" target="_blank" class="contact-card">
-        <span>LINKS</span>
-        <strong>Linktree</strong>
-      </a>
-    </div>
-
-    <p id="copyStatus"></p>
+    <a class="card" href="press.html">
+      <span>03</span>
+      <h3>Press & Media Kit</h3>
+      <p>Logos, Pressetexte, Richtlinien und offizielles Northlight-Material.</p>
+    </a>
   </section>
 </main>
 
-<footer>
+<footer class="footer">
   <div>
     <h3>Northlight Animation Studios</h3>
     <p>Independent Animation Studio.</p>
   </div>
 
   <div>
-    <a href="#home">Home</a>
-    <a href="#projects">Projekte</a>
-    <a href="#partners">Partner</a>
-    <a href="#join">Bewerbung</a>
-    <a href="#contact">Kontakt</a>
+    <a href="impressum.html">Impressum</a>
+    <a href="datenschutz.html">Datenschutz</a>
+    <a href="downloads/marketing-richtlinien.pdf" download>Marketing Richtlinien</a>
+    <a href="downloads/social-media-richtlinien.pdf" download>Social Media Richtlinien</a>
   </div>
 
   <div>
-    <a href="impressum.html">Impressum</a>
-    <a href="datenschutz.html">Datenschutz</a>
     <a href="https://www.instagram.com/northlightanimationstudio/" target="_blank">Instagram</a>
     <a href="https://www.youtube.com/@NorthlightAnimationStudio" target="_blank">YouTube</a>
     <a href="https://linktr.ee/NorthlightAnimationStudio" target="_blank">Linktree</a>
   </div>
 </footer>
-
-<div class="cookie-banner" id="cookieBanner">
-  <p>Wir verwenden notwendige Speicherung für Spracheinstellungen und Cookie-Auswahl.</p>
-  <div>
-    <button onclick="acceptCookies('essential')" type="button">Nur notwendige</button>
-    <button onclick="acceptCookies('all')" type="button">Alle akzeptieren</button>
-    <a href="datenschutz.html">Datenschutz</a>
-  </div>
-</div>
 
 <script src="script.js"></script>
 </body>
